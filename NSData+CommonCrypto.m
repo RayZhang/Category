@@ -85,7 +85,7 @@ typedef uint32_t CCKeySize;
     
     CCCryptorStatus status = CCCrypt(operation, algorithm, options,
                                      key, size,
-                                     NULL, /* initialization vector */
+                                     NULL,
                                      [self bytes], dataInLength,
                                      dataOut, dataOutAvailable,
                                      &dataOutMoved);
