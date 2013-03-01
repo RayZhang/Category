@@ -1,6 +1,5 @@
 //
 //  NSData+CommonCrypto.h
-//  Crypt
 //
 //  Created by Ray Zhang on 13-3-1.
 //  Copyright (c) 2013年 Ray Zhang. All rights reserved.
