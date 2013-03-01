@@ -12,10 +12,10 @@
 - (NSString *)MD5;
 - (NSString *)SHAWithDigestLength:(NSUInteger)length;
 
-- (NSData *)DESEncryptWithKey:(NSString *)encryptKey;
-- (NSData *)DESDecryptWithKey:(NSString *)decryptKey;
+- (id)DESEncryptWithKey:(NSString *)encryptKey;
+- (id)DESDecryptWithKey:(NSString *)decryptKey;
 
-- (NSData *)AES256EncryptWithKey:(NSString *)encryptKey;
-- (NSData *)AES256DecryptWithKey:(NSString *)decryptKey;
+- (id)AES256EncryptWithKey:(NSString *)encryptKey;
+- (id)AES256DecryptWithKey:(NSString *)decryptKey;
 
 @end
