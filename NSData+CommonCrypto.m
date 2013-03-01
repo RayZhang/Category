@@ -100,19 +100,19 @@ typedef uint32_t CCKeySize;
     return retVal;
 }
 
-- (NSData *)DESEncryptWithKey:(NSString *)encryptKey {
+- (id)DESEncryptWithKey:(NSString *)encryptKey {
     return [self cryptWithOperation:kCCEncrypt algorithm:kCCAlgorithmDES options:kCCOptionPKCS7Padding | kCCOptionECBMode key:encryptKey size:kCCKeySizeDES];
 }
 
-- (NSData *)DESDecryptWithKey:(NSString *)decryptKey {
+- (id)DESDecryptWithKey:(NSString *)decryptKey {
     return [self cryptWithOperation:kCCDecrypt algorithm:kCCAlgorithmDES options:kCCOptionPKCS7Padding | kCCOptionECBMode key:decryptKey size:kCCKeySizeDES];
 }
 
-- (NSData *)AES256EncryptWithKey:(NSString *)encryptKey {
+- (id)AES256EncryptWithKey:(NSString *)encryptKey {
     return [self cryptWithOperation:kCCEncrypt algorithm:kCCAlgorithmAES128 options:kCCOptionPKCS7Padding | kCCOptionECBMode key:encryptKey size:kCCKeySizeAES256];
 }
 
-- (NSData *)AES256DecryptWithKey:(NSString *)decryptKey {
+- (id)AES256DecryptWithKey:(NSString *)decryptKey {
     return [self cryptWithOperation:kCCDecrypt algorithm:kCCAlgorithmAES128 options:kCCOptionPKCS7Padding | kCCOptionECBMode key:decryptKey size:kCCKeySizeAES256];
 }
 
